@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 
+import { AccountService } from './account.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccountComponent } from './account/account.component';
@@ -12,13 +13,15 @@ import { InputComponent } from './input/input.component';
   declarations: [
     AppComponent,
     AccountComponent,
-    InputComponent
+    InputComponent,
+    AccountService 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgProgressModule.forRoot(),
-    NgProgressHttpClientModule
+    NgProgressHttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

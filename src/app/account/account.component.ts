@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
+import { HttpClient } from '@angular/common/http';
+import { AccountService } from '../account.service';
 
 @Component({
   selector: 'app-account',
@@ -7,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountComponent implements OnInit {
 
-  constructor() { }
+  users:User;
+
+  constructor(private userService:AccountService,private http:HttpClient) { }
 
   ngOnInit() {
   }

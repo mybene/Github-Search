@@ -13,20 +13,20 @@ import { AccountRequestService } from '../account-http/account-request.service';
 export class InputComponent implements OnInit {
   input: string;
   users:User;
-  reposit:Repository [];
+  repo:Repository [];
 
 
   constructor( private accountRequestService: AccountRequestService) { }
 
   ngOnInit() {
   }
-  search() {
+  getInfos() {
 this.accountRequestService.userRequest(this.input)
 this.users=this.accountRequestService.users
 console.log(typeof(this.users))
 
 this.accountRequestService.repositRequest(this.input)
-this.reposit=this.accountRequestService.reposit
-console.log(this.reposit)
+this.repo=this.accountRequestService.reposit
+console.log(this.repo)
   }
 }
