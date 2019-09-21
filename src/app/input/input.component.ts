@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountService } from '../account.service';
 import { User } from '../user';
-import { Repository } from '../repository-class/repository';
+import { Repository } from '../account-class/repository';
 import { AccountRequestService } from '../account-http/account-request.service';
 
 

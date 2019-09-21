@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
-import { Repository } from '../repository-class/repository';
+import { Repository } from '../account-class/repository';
 import { User } from '../user';
 import { resolve } from 'url';
 
