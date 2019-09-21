@@ -29,8 +29,9 @@ export class AccountRequestService {
       followings:number
     }
     let promise = new Promise((resolve, reject) => {
-      this.http.get<ApiResponse>("https://api.github.com/users/" + input + "?access_token=" +environment.  APIgithub).toPromise().then(response => {
-        this.user.login = response.login
+      this.http.get<ApiResponse>("https://api.github.com/users/"+input+"?access_token="+environment.APIgithub).toPromise().then(response=>{
+      
+      this.user.login = response.login
         this.user.avatar_url = response.avatar_url
         this.user.bio = response.bio
         this.user.html_url = response.html_url
@@ -58,8 +59,9 @@ export class AccountRequestService {
       lastUpdated: String
     }
     let promise = new Promise((resolve, reject) => {
-      this.http.get<ApiResponse>("https://api.github.com/users/" + input + "?access_token=" +environment.  APIgithub).toPromise().then(response => {
-        for (var i in response) {
+
+      this.http.get<ApiResponse>("https://api.github.com/users/"+input+"?access_token="+environment.APIgithub).toPromise().then(response=>{
+      for (var i in response) {
           this.repos.push(response[i]);
         }
         resolve()
