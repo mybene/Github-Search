@@ -22,10 +22,9 @@ form{
  
 }
 #github{
-    column-count: 2;
     flex-direction: column;
-}
-#profile{
-    float: left;
-    height:100%;
+    background-color:#ffffff;
+    opacity:0.8;
+    border:1px solid black;
+  
 }

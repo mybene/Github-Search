@@ -13,7 +13,7 @@ import { AccountRequestService } from '../account-http/account-request.service';
 export class InputComponent implements OnInit {
   input: string;
   users:User;
-  repo:Repository [];
+  repos:Repository [];
 
 
   constructor( private accountRequestService: AccountRequestService) { }
@@ -27,7 +27,7 @@ this.users=this.accountRequestService.user
 console.log(typeof(this.users))
 
 this.accountRequestService.repositRequest(this.input)
-this.repo=this.accountRequestService.reposit
-console.log(this.repo)
+this.repos=this.accountRequestService.reposit
+console.log(this.repos)
   }
 }
