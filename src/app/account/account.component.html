@@ -1,2 +1,14 @@
 <ng-progress></ng-progress>
-<app-input></app-input>
+<div class="container" style="text-align:center">
+
+    <app-input></app-input>
+
+    <h4>Public repositories</h4>
+    
+    <div  id="listed" *ngFor="let repos of reposit">
+      <p appHighlighted>{{reposit.name}}</p>
+      <p><b>Description:</b>{{reposit.description}}</p>
+      <p><b>Posted since:</b>{{reposit.lastUpdated}}ago</p>
+
+    </div>
+</div>

@@ -1,11 +1,23 @@
-.container{
-    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4opygaaLA5tTtyp036bLMfjtLjPfQEsvp-tRWl-JpeNpUHxA9');
-    background-size:cover;
+
+table,th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+td,th{
+    padding:10px;
+}
+table{
+    width:90%
+}
+th{
+    font-weight:bolder;
+}
+#output{
+    margin:30px;
 }
 
 form{
     margin:20px 0 20px 0;
     background-color:#f1f1ef;
-    flex-direction:column;
-    column-count:2;
+ 
 }
