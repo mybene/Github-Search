@@ -21,3 +21,11 @@ form{
     background-color:#f1f1ef;
  
 }
+#github{
+    column-count: 2;
+    flex-direction: column;
+}
+#profile{
+    float: left;
+    height:100%;
+}
