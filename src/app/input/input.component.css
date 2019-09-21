@@ -7,8 +7,10 @@ td,th{
     padding:10px;
 }
 table{
-    width:90%
+    width:90%;
+    margin-left:20px;
 }
+
 th{
     font-weight:bolder;
 }
@@ -27,4 +29,7 @@ form{
     opacity:0.8;
     border:1px solid black;
   
+}
+#profile{
+    margin:30px;
 }

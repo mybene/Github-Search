@@ -27,7 +27,7 @@ this.users=this.accountRequestService.user
 console.log(typeof(this.users))
 
 this.accountRequestService.repositRequest(this.input)
-this.repos=this.accountRequestService.reposit
+this.repos=this.accountRequestService.repos
 console.log(this.repos)
   }
 }

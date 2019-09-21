@@ -5,5 +5,7 @@ export class User {
   public html_url:string,
   public bio:string,
   public created_at:Date,
-  public repositories:number){}
+  public repositories:number,
+  public follower:number,
+  public followings:number){}
 }
