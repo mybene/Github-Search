@@ -25,7 +25,7 @@ export class AccountRequestService {
       bio: string,
       created_at: Date,
       repositories: number,
-      follower:number,
+      followers:number,
       followings:number
     }
     let promise = new Promise((resolve, reject) => {
@@ -37,9 +37,9 @@ export class AccountRequestService {
         this.user.html_url = response.html_url
         this.user.created_at = response.created_at
         this.user.repositories = response.repositories
-        this.user.follower=response.follower
+        this.user.followers=response.followers
         this.user.followings=response.followings
-        console.log(name)
+        console.log(this.user)
         resolve()
       },
         error => {
@@ -54,15 +54,13 @@ export class AccountRequestService {
   }
   repositRequest(input) {
     interface ApiResponse {
-      name: string,
-      description: string,
-      lastUpdated: String
+      repos_url:string
     }
     let promise = new Promise((resolve, reject) => {
 
       this.http.get<ApiResponse>("https://api.github.com/users/"+input+"?access_token="+environment.APIgithub).toPromise().then(response=>{
       for (var i in response) {
-          this.repos.push(response[i]);
+          this.repos.push(this.user[i]);
         }
         resolve()
       },

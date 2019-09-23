@@ -6,6 +6,6 @@ export class User {
   public bio:string,
   public created_at:Date,
   public repositories:number,
-  public follower:number,
+  public followers:number,
   public followings:number){}
 }

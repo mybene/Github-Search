@@ -33,3 +33,9 @@ form{
 #profile{
     margin:30px;
 }
+a{
+    text-decoration: underline;
+    color:red;
+    background-color: silver;
+    margin:0 30px 10px 30px;
+}
