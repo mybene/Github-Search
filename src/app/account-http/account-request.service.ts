@@ -60,7 +60,7 @@ export class AccountRequestService {
 
       this.http.get<ApiResponse>("https://api.github.com/users/"+input+"?access_token="+environment.APIgithub).toPromise().then(response=>{
       for (var i in response) {
-          this.repos.push(this.user[i]);
+          this.repos.push(this.repos[i]);
         }
         resolve()
       },

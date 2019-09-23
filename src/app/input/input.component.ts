@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AccountService } from '../account.service';
+import { AccountService } from './acccount-service/account.service';
 import { User } from '../user';
 import { Repository } from '../repository';
 import { AccountRequestService } from '../account-http/account-request.service';
@@ -24,10 +24,10 @@ export class InputComponent implements OnInit {
   getInfos() {
 this.accountRequestService.userRequest(this.input)
 this.users=this.accountRequestService.user
-console.log(this.input)
+console.log(this.users);
 
 this.accountRequestService.repositRequest(this.input)
 this.repos=this.accountRequestService.repos
-console.log(this.repos)
+console.log(this.input)
   }
 }

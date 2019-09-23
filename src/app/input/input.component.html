@@ -21,7 +21,7 @@
   <div id="github">
       <div class="row" id="profile">
           <div class="picture">
-              <img src="{{repos.avatar_url}" alt="profile.picute" width="500px" height="500px">
+                <img src="{{avatar_url}}" alt="profile.picute" width="500px" height="500px">
           </div>
         <div class="acc">
           <span class="label label-primary">{{followers}}</span>
@@ -29,11 +29,11 @@
         </div>
         
       </div>
-      <div class="details">
+      <div class="details" ngFor='let User of users'>
       <table>
           <tr>
-              <th>Username</th>
-              <td>{{login}}</td>
+              <th>User.Username</th>
+              <td>{{this.userslogin}}</td>
           </tr>
           <tr>
               <th>Bio</th>
@@ -46,7 +46,7 @@
           </tr>
       </table>
       <br>
-        <a href="{{repo.repos_url}" class="btn  btn-succes" target="_blank" >View profile</a>
+        <a href="{{html_url}" class="btn  btn-succes" target="_blank" >View profile</a>
   </div>
 
  
