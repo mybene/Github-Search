@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
 import { Repository } from '../repository';
 import { AccountRequestService } from '../account-http/account-request.service';
+import { Account } from '../account';
 
 
 @Component({
@@ -12,7 +13,8 @@ import { AccountRequestService } from '../account-http/account-request.service';
 })
 export class InputComponent implements OnInit {
   input: string;
-  users:User;
+  // users:User;
+  acc:Account;
   repos:Repository [];
 
 
@@ -23,9 +25,8 @@ export class InputComponent implements OnInit {
   
   getInfos() {
 this.accountRequestService.userRequest(this.input)
-this.users=this.accountRequestService.user
-
-console.log(this.users);
+this.acc=this.accountRequestService.acc
+console.log(typeof(this.acc));
 
 this.accountRequestService.repositRequest(this.input)
 this.repos=this.accountRequestService.repos
