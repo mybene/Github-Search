@@ -37,7 +37,7 @@ export class AccountRequestService {
         this.user.html_url = response.html_url
         this.user.created_at = response.created_at
         this.user.repositories = response.repositories
-        this.user.followers=response.followers
+        this.user.follower=response.followers
         this.user.followings=response.followings
         console.log(this.user)
         resolve()

@@ -10,7 +10,7 @@
     <div class="col-ms-4">
       <label for="input" class="col-sm-4-form-label">Username</label>
       <div class="form-group row col-sm-12">
-        <input type="text" required class="form-control "  name="input"  [(ngModel)]=" input" placeholder="enter the username on github"  >
+        <input type="text" required class="form-control "  name="input"  [(ngModel)]="input" placeholder="enter the username on github"  >
       </div>
     </div>
     <div class="col-ms-4">
@@ -18,19 +18,20 @@
     </div>
   </form>
 
-  <div id="github">
+  <div id="github"  >
       <div class="row" id="profile">
           <div class="picture">
                 <img src="{{avatar_url}}" alt="profile.picute" width="500px" height="500px">
           </div>
         <div class="acc">
-          <span class="label label-primary">{{followers}}</span>
-          <span class="label label-info">{{following}}</span>
+          <!-- <span class="label label-primary">{{follower}}</span> -->
+          <!-- <span class="label label-info">{{following}}</span> -->
         </div>
         
       </div>
-      <div class="details" >
-      <table>
+      <div class="details"  >
+        <!-- <p><b>Usrname</b>{{user.login}}</p> -->
+      <table> 
           <tr>
               <th>Username</th>
               <td>{{login}}</td>
@@ -44,10 +45,10 @@
               <th>Membership since</th>
               <td>{{created_date|date|uppercase}}</td>
           </tr>
-      </table>
+      </table> 
       <br>
         <a href="{{html_url}" class="btn  btn-succes" target="_blank" >View profile</a>
-  </div>
+  </div> 
 
  
 

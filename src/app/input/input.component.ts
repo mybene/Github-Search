@@ -24,6 +24,7 @@ export class InputComponent implements OnInit {
   getInfos() {
 this.accountRequestService.userRequest(this.input)
 this.users=this.accountRequestService.user
+
 console.log(this.users);
 
 this.accountRequestService.repositRequest(this.input)
