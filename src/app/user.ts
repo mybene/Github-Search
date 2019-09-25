@@ -7,13 +7,7 @@ export class User {
   public created_at:Date,
   public repositories:number,
   public follower:number,
-  public followings:number){
-    this.login;
-    this.avatar_url;
-    this.bio;
-    this.created_at;
-    this.follower;
-    this.followings;
-    this.repositories
+  public  following:number){
+    
   }
 }

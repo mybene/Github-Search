@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {User} from './user';
+import { Account } from './account';
+// import {User} from './user';
 // import {Repository} from './repository';
 
 @Component({
@@ -8,5 +9,5 @@ import {User} from './user';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GithubSearch';
+  title = 'Github-Search';
 }

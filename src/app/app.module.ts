@@ -4,7 +4,7 @@ import {FormsModule} from '@angular/forms';
 
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
-import { AccountService } from './account.service';
+// import { AccountService } from './account.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccountComponent } from './account/account.component';
