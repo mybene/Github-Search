@@ -27,7 +27,7 @@
             <p><b>Names:</b>{{acc.name}}</p>
             <p><b>Followers:</b>{{acc.followers}}</p>
             <p><b>Following:</b>{{acc.following}}</p>
-            <a href="{{acc.html_url}}" class="btn  btn-succes" target="_blank"  >Go on Github's account</a>
+            <P ><a href="{{acc.html_url}}" class="btn  btn-succes" target="_blank"  >Go on Github's account</a></P>
            </div>
         
       </div>
@@ -45,7 +45,7 @@
 
           <tr>
               <th>Membership since</th>
-              <td>{{acc.created_at|date|uppercase}}, {{acc.created_at|Datecount}} days ago</td>
+              <td>{{acc.created_at|date|uppercase}}, <b appHighligthed >{{acc.created_at|dateCount}} days ago</b></td>
           </tr>
       </table> 
      

@@ -11,13 +11,15 @@ import { AccountComponent } from './account/account.component';
 import { InputComponent } from './input/input.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DateCountPipe } from './date.pipe';
+import { HighligthedDirective } from './highlighted.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccountComponent,
     InputComponent,
-   DateCountPipe
+   DateCountPipe,
+   HighligthedDirective
 
   ],
   imports: [
