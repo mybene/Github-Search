@@ -9,18 +9,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccountComponent } from './account/account.component';
 import { InputComponent } from './input/input.component';
-import { HighligthedDirective } from './highligthed.directive';
-import { DateCountPipe } from './date-count.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { DateCountPipe } from './date.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccountComponent,
     InputComponent,
-    // AccountService,
-    HighligthedDirective,
-    DateCountPipe 
+   DateCountPipe
+
   ],
   imports: [
     BrowserModule,

@@ -45,11 +45,10 @@
 
           <tr>
               <th>Membership since</th>
-              <td>{{acc.created_at|date|uppercase}}</td>
+              <td>{{acc.created_at|date|uppercase}}, {{acc.created_at|Datecount}} days ago</td>
           </tr>
       </table> 
-      <br>
-        <a href="{{acc.html_url}}" class="btn  btn-succes"  >{{acc.html_url}}</a>
+     
   </div> 
 
  
